@@ -26,7 +26,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      vite_resas_api_key: ${{ secrets.VITE_RESAS_API_KEY }}
+    env:
+      VITE_RESAS_API_KEY: ${{ secrets.VITE_RESAS_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
