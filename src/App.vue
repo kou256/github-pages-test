@@ -7,6 +7,7 @@ export default {
   },
   created() {
     console.log(import.meta.env.VITE_RESAS_API_KEY)
+    console.log(process.env.VITE_RESAS_API_KEY)
   }
 }
 </script>
