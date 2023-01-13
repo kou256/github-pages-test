@@ -1,5 +1,14 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue'
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  },
+  created() {
+    console.log(import.meta.env.VITE_RESAS_API_KEY)
+  }
+}
 </script>
 
 <template>
